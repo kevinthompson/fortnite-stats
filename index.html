@@ -29,6 +29,10 @@
           instance.find('iframe').attr('src', statsUrl.replace('{name}', name));
           instance.appendTo('#stats');
         }
+
+        setTimeout(function() {
+          window.location.reload();
+        }, 1000 * 60 * 10)
       })
     </script>
   </head>
