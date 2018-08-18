@@ -8,8 +8,8 @@
       #stats { margin: 1em; }
       iframe { width: 184px; min-height: 320px; overflow: none; }
       .template { display: none }
-      .player { text-align: center; float:left; margin-right: .75em;
-      text-transform: uppercase; }
+      .player { text-align: center; float:left; margin-right: .75em; text-transform: uppercase; }
+      .name { line-height: 1em; }
     </style>
     <script
       type="text/javascript"
@@ -29,10 +29,6 @@
           instance.find('iframe').attr('src', statsUrl.replace('{name}', name));
           instance.appendTo('#stats');
         }
-
-        setTimeout(function() {
-          window.location.reload();
-        }, 1000 * 60 * 10)
       })
     </script>
   </head>
